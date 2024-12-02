@@ -11,9 +11,8 @@ dotenv_1.default.config({
     path: "./.env"
 });
 (0, db_1.connectDB)().then(() => {
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT || 8000;
     app_1.app.listen(port, () => {
         console.log(`Server listening at port ${port}`);
     });
 }).catch((error) => console.log(error));
-console.log("Environment variables:", process.env);

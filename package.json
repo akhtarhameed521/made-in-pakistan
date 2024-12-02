@@ -4,7 +4,9 @@
   "description": "this is e commerce website in MERN",
   "main": "index.ts",
   "scripts": {
-    "dev": "nodemon --exec ts-node -r dotenv/config src/index.ts"
+    "dev": "nodemon --exec ts-node -r dotenv/config src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsc"
   },
   "author": "",
   "license": "ISC",
