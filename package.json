@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon --exec ts-node -r dotenv/config src/index.ts",
-    "start": "nodemon build/index.js",
+    "start": "node build/index.js",
     "build": "tsc"
   },
   "author": "",
